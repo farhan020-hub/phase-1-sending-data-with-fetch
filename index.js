@@ -3,8 +3,6 @@
 function submitData(name,email) {
   // Create an object with the data you want to send in the POST request
   const postData = {
-    // Include your data fields here
-    // For example:
     name: name,
     email: email,
   };
@@ -36,7 +34,6 @@ function submitData(name,email) {
       const errorMessage = document.createElement('div');
       errorMessage.textContent = 'Error: ' + error.message;
 
-      // Append the error message to a specific element in the DOM (replace 'error-container' with the actual ID or selector)
       const errorContainer = document.getElementById('error-container');
       errorContainer.appendChild(errorMessage);
 
